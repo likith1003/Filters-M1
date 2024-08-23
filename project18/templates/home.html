@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Welcome to Home Page</h1>
+        <h1>{{data}}</h1>
+        <h1>upper--->{{data | upper}}</h1>
+        <h1>lower--->{{data | lower}}</h1>
+        <h1>capfirst--->{{data | capfirst}}</h1>
+        <h1>title--->{{data | title}}</h1>
+        <h1>{{data | length}}</h1>
+        <h1>{{data | slice:":10"}}</h1>
+        <h1>{{data | truncatechars:"10"}}</h1>
+        <h1>{{data | truncatewords:"3"}}</h1>
+        <h1>hii friends i love pets so i have {{c}} butterfl{{c|pluralize:'y,ies'}}</h1>
+        <h1>{{date | date:"l, F j, Y"}}</h1>
+
+
+        <a href="{% url 'display' '1' %}">Jan</a> <br>
+        <a href="{% url 'display' '2' %}">Feb</a><br>
+        <a href="{% url 'display' '3' %}">Mar</a><br>
+        <a href="{% url 'display' '4' %}">Apr</a><br>
+        
+    </center>
+</body>
+</html>
